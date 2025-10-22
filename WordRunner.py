@@ -8,7 +8,7 @@ TEXTS_DIR.mkdir(exist_ok=True)
 
 @app.get("/")
 def home():
-    return {"message":"Hello Mother"}
+    return {"message":"Hello World"}
 
 @app.post("/upload")
 async def upload(file: UploadFile = File(...)):
